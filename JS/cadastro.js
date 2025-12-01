@@ -42,11 +42,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
             saveUsers(users);
             showMessage('Cadastro realizado com sucesso!');
-            window.location.href = 'login.html';
+            window.location.href = 'index.html';
         });
     }
 
-    if (page.includes('login.html')) {
+    if (page.includes('index.html')) {
         const email = document.getElementById('email');
         const senha = document.getElementById('senha');
         const btn = document.getElementById('entrar');
@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function () {
         
         if (!user) {
             showMessage('Você precisa estar logado!');
-            window.location.href = 'login.html'; 
+            window.location.href = 'index.html'; 
         } else {
             showMessage(`Bem-vindo de volta, ${user.nome}!`);
 
